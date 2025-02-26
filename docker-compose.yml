@@ -1,0 +1,10 @@
+services:
+  alt-linux:
+    build: .
+    privileged: true
+    ports:
+      - "5900:5900"  # VNC port
+    volumes:
+      - ./iso:/iso:ro  # Mount ISO directory as read-only
+      - ./hdd:/hdd     # Mount HDD directory for persistent storage
+    working_dir: /

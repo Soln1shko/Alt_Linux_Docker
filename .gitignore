@@ -1,0 +1,27 @@
+# Виртуальные диски QEMU
+disk/
+*.qcow2
+*.img
+
+# ISO образы
+iso/
+*.iso
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
